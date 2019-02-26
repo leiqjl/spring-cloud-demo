@@ -15,4 +15,9 @@ public class ConsumerController {
         return consumerService.consumer();
     }
 
+
+    @RequestMapping("/command")
+    public String command() throws Exception {
+        return consumerService.command();
+    }
 }

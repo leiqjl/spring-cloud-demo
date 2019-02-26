@@ -18,4 +18,11 @@ public class ConsumerService {
     public String testFallback() {
         return "fail";
     }
+
+
+    public String command() throws Exception {
+        ConsumerCommand command = new ConsumerCommand("command", restTemplate);
+        String result = command.execute();
+        return result;
+    }
 }
