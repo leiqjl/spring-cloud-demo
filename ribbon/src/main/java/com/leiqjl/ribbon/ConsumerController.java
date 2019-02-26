@@ -17,7 +17,7 @@ public class ConsumerController {
 
 
     @RequestMapping("/command")
-    public String command() throws Exception {
+    public String command() {
         return consumerService.command();
     }
 }

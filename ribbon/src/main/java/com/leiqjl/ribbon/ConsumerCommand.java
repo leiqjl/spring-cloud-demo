@@ -14,8 +14,7 @@ public class ConsumerCommand extends HystrixCommand<String> {
     }
 
     @Override
-    protected String run() throws Exception {
-        System.out.println(Thread.currentThread().getName());
+    protected String run() {
         return restTemplate.getForEntity("http://hello-service/hello", String.class).getBody();
     }
 

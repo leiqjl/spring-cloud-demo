@@ -20,9 +20,9 @@ public class ConsumerService {
     }
 
 
-    public String command() throws Exception {
+
+    public String command() {
         ConsumerCommand command = new ConsumerCommand("command", restTemplate);
-        String result = command.execute();
-        return result;
+        return command.execute();
     }
 }
