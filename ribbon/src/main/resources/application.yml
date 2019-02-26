@@ -3,7 +3,7 @@ spring:
     name: ribbon
 server:
   port: 8803
-providers:
-  ribbon:
-    listOfServers: http://localhost:8881,http://localhost:8882
-
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/,http://localhost:8889/eureka/
