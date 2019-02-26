@@ -1,0 +1,13 @@
+#端口号
+server:
+  port: 8881
+#Eureka实例名，集群中根据这里相互识别
+spring:
+  application:
+    name: hello-service
+
+eureka:
+  #客户端
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/,http://localhost:8889/eureka/
