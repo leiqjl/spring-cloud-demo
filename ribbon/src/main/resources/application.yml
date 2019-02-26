@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: ribbon
+server:
+  port: 8803
+providers:
+  ribbon:
+    listOfServers: http://localhost:8881,http://localhost:8882
+
