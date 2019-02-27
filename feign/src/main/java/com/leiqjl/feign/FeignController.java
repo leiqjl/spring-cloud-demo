@@ -9,6 +9,11 @@ public class FeignController {
     @Autowired
     private FeignService feignService;
 
+    @GetMapping("hello")
+    public String hello() {
+        return feignService.hello();
+    }
+
     @GetMapping("consumer")
     public String consumer() {
         String result1 = feignService.test("jack");
