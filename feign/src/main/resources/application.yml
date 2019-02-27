@@ -7,4 +7,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8888/eureka/,http://localhost:8889/eureka/
-
+feign:
+  hystrix:
+    enabled: true
