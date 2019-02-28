@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.leiqjl</groupId>
-    <artifactId>config-client</artifactId>
+    <artifactId>config-client1</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>config-client</name>
     <description>Demo project for Spring Boot</description>
