@@ -1,0 +1,20 @@
+server:
+  port: 7771
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: config-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/,http://localhost:8889/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
