@@ -1,0 +1,15 @@
+server:
+  port: 7991
+spring:
+  application:
+    name: stream-provider
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+          auto-create-topics: true
+      bindings:
+        output:
+          destination: stream-demo
+          content-type: text/plain
