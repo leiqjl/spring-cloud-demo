@@ -10,10 +10,17 @@ public class SendController {
 
     @Autowired
     private SendService sendService;
+    @Autowired
+    private TestSendService testSendService;
 
     @RequestMapping("/send/{msg}")
     public void send(@PathVariable("msg") String msg){
         sendService.sendMsg(msg);
+    }
+
+    @RequestMapping("/test/send/{msg}")
+    public void testSend(@PathVariable("msg") String msg){
+        testSendService.sendMsg(msg);
     }
 
 }

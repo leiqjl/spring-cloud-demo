@@ -13,3 +13,6 @@ spring:
         output:
           destination: stream-demo
           content-type: text/plain
+        testOutput:
+          destination: stream-demo
+          content-type: text/plain
